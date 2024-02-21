@@ -34,9 +34,9 @@
 
 			<div class="row">
 				<label>수량</label>
-				<button type="button">-</button>
+				<button type="button" class="minus">-</button>
 				<input type="number" name="amount" min="1" max="9" value="1">
-				<button type="button">+</button>
+				<button type="button" class="plus">+</button>
 			</div>
 
 			<button class="order-btn">주문하기</button>
