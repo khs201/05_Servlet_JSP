@@ -13,7 +13,7 @@ import jakarta.servlet.http.HttpServletResponse;
 // 1. HttpServlet 상속 받기
 // 2. @WebServlet() 어노테이션 작성하기 
 
-// @WebServlet : <servlet>, <servlet-mapping> 태크를 컴파일시 추가하라는 어노테이션
+// @WebServlet : <servlet>, <servlet-mapping> 태그를 컴파일시 추가하라는 어노테이션
 // 1. 현재 클래스를 Servlet으로 등록 -> <servlet>
 // 2. 등록된 servlet과 () 내 요청 주소 매핑 -> <servlet-mapping>
 // 3. doGet() 또는 doPost() 오버라이딩 -> 요청 method에 따라 수행

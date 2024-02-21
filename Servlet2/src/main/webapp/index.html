@@ -1,23 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servlet 복습 프로젝트</title>
 
+    <link rel="stylesheet" href="../webapp/testcss.css">
 </head>
+
 <body>
-    
-<h1>김한석의 Servlet 복습 프로젝트</h1>
 
-<!-- 피자 주문 요청 -> 영수증 응답 --> 
-<h3>피자 주문 해버리기</h3>
+    <h1 style="color: pink">김한석의 Servlet 복습 프로젝트</h1>
 
-<form action="/ex1" method="get">
-    이름 : <input type="text" name="inputName"> <br>
-    나이 : <input type="number" name="inputAge"> <br>
-    <button type="submit">주문 버튼</button>
-</form>
+    <!-- 피자 주문 요청 -> 영수증 응답 -->
+    <h2 style="color: aqua;">피자 주문 해버리기</h2>
+
+    <img src="../webapp/images/cat1.jpg" alt="왜안뜸ㅋ?">
+
+
+    <!-- form 태그 제출 시 내부 input에
+         작성된 값을 /ex1 요청을 처리하는 서버(Servlet)으로 제출(GET 방식) -->
+    <form action="/pr" method="get">
+        <h3>받을 사람 이름 : <input type="text" name="yourName"></h3>
+        <h3>피자 받을 주소 : <input type="text" name="yourAddress" size="50"> </h3> <br>
+
+        <h3>피자 선택 :</h3>
+        <select name="pizza">
+            <option value="페퍼로니">페퍼로니 피자 (5000)</option>
+            <option value="고구마">고구마 피자 (6000)</option>
+            <option value="치킨">치킨 피자 (7000)</option>
+            <option value="불고기">불고기 피자 (7000)</option>
+        </select>
+
+        <br>
+        도우 선택 :
+        두꺼운거 <input type="radio" name="type" value="thick">
+        /
+        얇은거 <input type="radio" name="type" value="thin">
+
+        <br>
+
+        기타 옵션 : <br>
+
+        <input type="checkbox" name="opt" value="피클">
+        피클 추가 (+100)
+        <br>
+        <input type="checkbox" name="opt" value="콜라">
+        콜라 추가 (+200)
+        <br>
+        <input type="checkbox" name="opt" value="제로콜라">
+        제로 콜라 추가 (+300)
+        <br>
+
+
+        <button type="submit">주문 신청</button>
+    </form>
+
+
 
 
 
@@ -25,4 +65,5 @@
 
 
 </body>
+
 </html>
