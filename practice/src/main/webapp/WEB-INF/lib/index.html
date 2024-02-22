@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제</title>
+</head>
+
+<body>
+
+    <!-- 
+    - 할 일 제목(title)을 입력 받아 "/todo-search" (POST) 요청
+    
+    -Todo DTO 파일
+    
+    public class Todo implements Serializable{
+    private String title; // 할 일 제목
+    private String detail; // 상세 내용
+    private boolean complete; // 완료 여부
+    private LocalDateTime regDate; // 등록 날짜
+    
+    //생성자
+    //getter/setter
+    //toString() 오버라이딩
+    }
+    
+    
+    - "/todo-search" 를 처리하는 Servlet에서
+    "/io_test/TodoList.dat 파일을 ObjectInputStream을 이용해 읽어와서
+    List 형태로 준비
+    
+    
+    - List에 입력 받은 할 일 제목과 일치하는 title을 가진 Todo가 있으면
+    Todo.toString() 문자열을
+    "/WEB-INF/views/todo/todo_result.jsp"를 이용해서 출력
+    (forward)
+    
+    - List에 입력 받은 할 일 제목과 일치하는 title을 가진 Todo가 없으면
+    "OOO은 존재하지 않습니다" 라는 메시지를
+    "/todo/error" 주소를 요청해서(재요청) 출력
+    (redirect) 
+-->
+
+
+
+
+
+
+</body>
+
+</html>
