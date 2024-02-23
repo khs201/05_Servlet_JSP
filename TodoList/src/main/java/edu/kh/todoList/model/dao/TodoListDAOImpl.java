@@ -153,6 +153,7 @@ public final class TodoListDAOImpl implements TodoListDAO {
 		// 2. index가 정상 범위인 경우
 		// index번째 요소의 complete 값을 변경하고 
 		// 파일 저장 후 true 반환
+		
 
 		boolean complete = todoList.get(index).isComplete();
 		todoList.get(index).setComplete(!complete);
