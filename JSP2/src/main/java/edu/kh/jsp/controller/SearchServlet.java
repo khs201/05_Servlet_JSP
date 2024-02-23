@@ -17,7 +17,7 @@ public class SearchServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-		List<String> nameList = new ArrayList<String>();
+		List<String> nameList = new ArrayList<>();
 		nameList.add("김김김");
 		nameList.add("나나나");
 		nameList.add("박박박");

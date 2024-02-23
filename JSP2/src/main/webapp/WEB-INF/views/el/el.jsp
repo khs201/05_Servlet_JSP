@@ -37,7 +37,6 @@
 
 		<li>DTO : ${book1}
 			<ul>
-
 				<!-- \${K.필드명} : 객체의 필드값을 얻어오기 위한 getter 호출 -->
 				<!-- EL을 이용해서 필드값을 얻어오려면 getter가 필수!! -->
 
@@ -87,7 +86,7 @@
 		또는
 		a태그, JS, 주소창에 직접 작성하는 것도 가능!
 	</pre>
-	
+
 	<h3>\${param.input} : ${param.input}</h3>
 	<h3>\${param.message} : ${param.message}</h3>
 
