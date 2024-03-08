@@ -42,6 +42,18 @@
 		<button>추가</button>
 	</form>
 
+	<form action="/todo/complete">
+		<!--  method 미작성 시 GET 기본 값 -->
+		<h4>완료 여부 수정</h4>
+		<div>
+			완료 여부 수정할 할 일 : <input type="text" name="complName">
+		</div>
+		<button>수정</button>
+	</form>
+
+
+
+
 	<hr>
 
 	<table border="1" style="border-collapse: collapse;">
@@ -69,8 +81,7 @@
 					<td>
 						<!-- 쿼리스트링 : 주소에 포함된 데이터가 담긴 문자열 
 							 key=value 형태
-					--> 
-					<a href="/todo/detail?index=${vs.index}"> ${todo.title} </a>
+					--> <a href="/todo/detail?index=${vs.index}"> ${todo.title} </a>
 					</td>
 					<th>
 						<!-- 
